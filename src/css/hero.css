@@ -1,0 +1,110 @@
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 6rem 0;
+}
+
+.hero-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.meta-block {
+    font-size: 0.70rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+.label {
+    color: var(--lime);
+    display: block;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-family: var(--sans);
+    font-weight: 900;
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 .lime {
+    color: var(--lime);
+}
+
+.hero-sub {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.hero-cta {
+    margin-top: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cta-btn {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    transition: all 0.2s;
+}
+
+.cta-btn.primary {
+    background: var(--lime);
+    color: var(--black);
+}
+
+.cta-btn.primary:hover {
+    box-shadow: 0 0 30px var(--lime-dim), 0 0 60px rgba(200, 255, 0, 0.08);
+    transform: translateY(-1px);
+}
+
+.cta-btn.ghost {
+    border: 1px solid var(--border-strong);
+    color: var(--lime);
+}
+
+.cta-btn.ghost:hover {
+    background: var(--lime-dim);
+    border-color: var(--lime);
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-meta {
+        gap: 1.5rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-btn {
+        text-align: center;
+        width: 100%;
+    }
+}
