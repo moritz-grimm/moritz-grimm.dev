@@ -1,0 +1,53 @@
+.about-block {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 2.5rem;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+.about-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--lime);
+}
+
+.about-text {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.9;
+    letter-spacing: 0.3px;
+}
+
+.about-text strong {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.about-text .hl {
+    color: var(--lime);
+}
+
+.about-text a {
+    color: var(--lime);
+    text-decoration: none;
+    transition: text-shadow 0.2s;
+}
+
+.about-text a::before {
+    content: '[';
+    color: var(--lime);
+}
+
+.about-text a::after {
+    content: ' ↗]';
+    color: var(--lime);
+}
+
+.about-text a:hover {
+    text-shadow: 0 0 8px var(--lime), 0 0 20px var(--lime-mid);
+}

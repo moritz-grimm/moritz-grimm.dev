@@ -1,0 +1,86 @@
+:root {
+    --lime: #c8ff00;
+    --lime-dim: rgba(200, 255, 0, 0.15);
+    --lime-mid: rgba(200, 255, 0, 0.4);
+    --black: #0a0a0a;
+    --dark: #111111;
+    --card: #151515;
+    --border: rgba(200, 255, 0, 0.12);
+    --border-strong: rgba(200, 255, 0, 0.3);
+    --text: #e8e8e8;
+    --text-dim: #777777;
+    --mono: 'Space Mono', 'Courier New', monospace;
+    --sans: 'Inter', -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--black);
+    color: var(--text);
+    font-family: var(--mono);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hazard-stripe {
+    width: 100%;
+    height: 28px;
+    background: repeating-linear-gradient(-45deg,
+            var(--lime),
+            var(--lime) 10px,
+            var(--black) 10px,
+            var(--black) 20px);
+}
+
+.hazard-stripe.thin {
+    height: 6px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.lime {
+    color: var(--lime)
+}
+
+.section-header {
+    padding: 3rem 0 1.5rem;
+}
+
+.section-label {
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--lime);
+    font-weight: 700;
+}
+
+.section-title {
+    font-family: var(--sans);
+    font-weight: 900;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-top: 0.5rem;
+}
+
+.section-desc {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    line-height: 1.7;
+    margin-top: 1rem;
+    max-width: 500px;
+}
