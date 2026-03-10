@@ -5,8 +5,8 @@ footer {
 }
 
 footer p {
-    font-size: 0.55rem;
-    color: #333;
+    font-size: 0.60rem;
+    color: var(--text-dim);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
