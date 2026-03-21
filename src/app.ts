@@ -1,4 +1,5 @@
 import type { Endpoints } from "@octokit/types";
+import "./scripts/infrastructure";
 
 type Commits = Endpoints["GET /repos/{owner}/{repo}/commits"]["response"]["data"];
 
