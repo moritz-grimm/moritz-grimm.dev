@@ -2,9 +2,9 @@ import type { Endpoints } from "@octokit/types";
 
 type Commits = Endpoints["GET /repos/{owner}/{repo}/commits"]["response"]["data"];
 
-const CACHE_KEY = "lastCommitCache";
-const CACHE_TIME_KEY = "lastCommitCacheTime";
-const CACHE_TTL = 86400000;
+const CACHE_KEY = "lastCommitDate";
+const CACHE_TIME_KEY = "lastCommitDateCachedAt";
+const CACHE_TTL = 86400000; // 24h
 
 const lastUpdatedEl = document.getElementById("last-updated");
 const footerEl = document.getElementById("footer-text");
@@ -34,3 +34,9 @@ if (!lastCommitDate || Date.now() - Number(cachetAt) > CACHE_TTL ) {
 if (lastUpdatedEl) {
     lastUpdatedEl.textContent = `Last Updated: ${lastCommitDate ?? "Unknown"}`;
 }
+
+const versionEl = document.querySelectorAll(".app-version");
+
+versionEl.forEach(element => {
+    element.textContent = `v${__APP_VERSION__ ?? "v1.0.0"}`;
+});
