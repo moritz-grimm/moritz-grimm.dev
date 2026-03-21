@@ -1,0 +1,25 @@
+/* Scrollbar-Breite */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Hintergrund der Scrollbar-Spur */
+::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+
+/* Der eigentliche Schieber */
+::-webkit-scrollbar-thumb {
+    background: var(--lime-mid);
+    border-radius: 4px;
+}
+
+/* Hover-Effekt */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--lime);
+}
+
+html {
+    scrollbar-width: thin; /* "auto", "thin", oder "none" */
+    scrollbar-color: var(--lime-mid) var(--dark); /* thumb-farbe  track-farbe */
+}
