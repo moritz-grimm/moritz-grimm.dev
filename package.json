@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
+    "@moritz-grimm/eslint-config": "^2.0.0",
     "typescript": "~5.9.3",
     "vite": "^7.3.1"
   }
