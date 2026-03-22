@@ -19,7 +19,9 @@
 .infrastructure-status {
     width: 8px;
     height: 8px;
+    min-width: 8px;
     border-radius: 50%;
+    flex-shrink: 0;
     background: var(--text-dim);
 }
 
@@ -33,7 +35,7 @@
 
 .infrastructure-name {
     font-weight: 700;
-    min-width: 150px;
+    white-space: nowrap;
 }
 
 .infrastructure-url {
@@ -55,4 +57,19 @@
 
 .infrastructure-url a::after {
     content: ' ↗]';
+}
+
+@media (max-width: 640px) {
+    .infrastructure-item {
+        flex-wrap: wrap;
+    }
+
+    .infrastructure-name,
+    .infrastructure-url {
+        flex-basis: calc(100% - 8px - 1rem);
+    }
+
+    .infrastructure-url {
+        margin-left: calc(8px + 1rem);
+    }
 }
