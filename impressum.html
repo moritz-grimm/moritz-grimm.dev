@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -7,18 +7,57 @@
     <title>MORITZ // DEV - Impressum</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/base.css">
+    <link rel="stylesheet" href="src/css/nav.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/scrollbar.css">
+    <link rel="stylesheet" href="src/css/legal.css">
 </head>
 
 <body>
-    <h1>Impressum</h1>
+    <main>
+        <nav>
+            <div class="container">
+                <div class="nav-inner">
+                    <a href="/" class="nav-logo">
+                        <div class="nav-logo-icon">M</div>
+                        <span class="nav-logo-text">MORITZ</span>
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="/">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <p>Moritz Grimm<br />
-        Habichtstra&szlig;e 8<br />
-        84137 Vilsbiburg</p>
+        <div class="hazard-stripe thin"></div>
 
-    <h2>Kontakt</h2>
-    <p>E-Mail: m.grimm.dev@icloud.com</p>
-    <p>Quelle: <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer">e-recht24.de</a></p>
+        <div class="container">
+            <div class="legal-content">
+                <h1>Impressum</h1>
+
+                <p>Moritz Grimm<br>
+                    Habichtstra&szlig;e 8<br>
+                    84137 Vilsbiburg</p>
+
+                <h2>Kontakt</h2>
+                <p>E-Mail: m.grimm.dev@icloud.com</p>
+                <p>Phone number: +49 176 72451231</p>
+
+                <p class="legal-source">Quelle: <a href="https://www.e-recht24.de" target="_blank"
+                        rel="noopener noreferrer">e-recht24.de</a></p>
+            </div>
+        </div>
+
+        <div class="hazard-stripe thin"></div>
+
+        <footer>
+            <p id="footer-text"></p>
+        </footer>
+
+        <script type="module" src="src/legal.ts"></script>
+    </main>
 </body>
 
 </html>
