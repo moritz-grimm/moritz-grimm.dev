@@ -1,4 +1,6 @@
-import { getLastCommitDate } from "./githubApi";
+type LastUpdatedResponse = {
+    lastUpdated: string,
+};
 
 const footerEl = document.getElementById("footer-text");
 
@@ -15,8 +17,9 @@ if (footerEl) {
 // Last Updated
 const lastUpdatedEl = document.getElementById("last-updated");
 if (lastUpdatedEl) {
-    const date = await getLastCommitDate();
-    lastUpdatedEl.textContent = `Last Updated: ${date ?? "Unknown"}`;
+    const res = await fetch("https://api.moritz-grimm.dev/last-updated/moritz-grimm.dev");
+    const date = await res.json() as LastUpdatedResponse;
+    lastUpdatedEl.textContent = `Last Updated: ${date.lastUpdated ?? "Unknown"}`;
 }
 
 // Version
