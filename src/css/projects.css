@@ -1,9 +1,12 @@
+.projects-section {
+    padding: 0 0 4.5rem 0;
+}
+
 .project-grid {
     display: grid;
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
-    margin: 1.5rem 0;
 }
 
 .project-card {
