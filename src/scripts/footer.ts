@@ -11,7 +11,7 @@ if (footerEl) {
                             | Built by Moritz 
                             | <a href="/impressum.html">Impressum</a>
                             | <a href="/privacy-policy.html">Privacy Policy</a>
-                            | <a href="https://status.moritz-grimm.dev/status/default" target="_blank" rel="noopener noreferrer">Status</a>`;
+                            | <a href="https://status.moritz-grimm.dev/status/default" target="_blank" rel="noopener noreferrer" data-umami-event="footer-status-click">Status</a>`;
 }
 
 // Last Updated

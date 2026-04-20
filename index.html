@@ -104,8 +104,8 @@
                 </p>
 
                 <div class="hero-cta">
-                    <a href="#projects" class="cta-btn primary">View Projects ↗</a>
-                    <a href="#contact" class="cta-btn ghost">Get in Touch</a>
+                    <a href="#projects" class="cta-btn primary" data-umami-event="hero-view-projects-click">View Projects ↗</a>
+                    <a href="#contact" class="cta-btn ghost" data-umami-event="hero-get-in-touch-click">Get in Touch</a>
                 </div>
             </section>
         </div>
@@ -126,11 +126,10 @@
                         I develop software not only for school or work, but because I
                         <span class="hl">enjoy</span> building new things and <span class="hl">solving</span>
                         problems.<br>
-                        Currently I'm building <a href="https://github.com/moritz-grimm/steam-vault">SteamVault</a>,
-                        expanding my <a href="https://knowledge.moritz-grimm.dev">Knowledge Base</a>, <br>
-                        building a <a href="https://github.com/moritz-grimm/personal-api">Personal API</a> and settings
-                        up my
-                        own <span class="hl">VPS</span> to host all of my pages.
+                        Currently I'm running my own <span class="hl">VPS</span> to host all of my pages,
+                        expanding my <a href="https://knowledge.moritz-grimm.dev" target="_blank" rel="noopener noreferrer" data-umami-event="about-knowledge-base-click">Knowledge Base</a>,
+                        building a <a href="https://github.com/moritz-grimm/personal-api" target="_blank" rel="noopener noreferrer" data-umami-event="about-personal-api-click">Personal API</a>,
+                        and experimenting with smaller side projects to solidify my stack.
                     </p>
                 </div>
             </section>
@@ -168,20 +167,20 @@
                 <div class="infrastructure-list">
                     <div class="infrastructure-item">
                         <span class="infrastructure-status" data-service="www.moritz-grimm.dev"></span><span
-                            class="infrastructure-name">Portfolio</span>
+                            class="infrastructure-name">Homepage</span>
                         <span class="infrastructure-url">moritz-grimm.dev</span>
                     </div>
                     <div class="infrastructure-item">
                         <span class="infrastructure-status" data-service="knowledge.moritz-grimm.dev"></span>
                         <span class="infrastructure-name">Knowledge Base</span>
                         <span class="infrastructure-url"><a href="https://knowledge.moritz-grimm.dev" target="_blank"
-                                rel="noopener noreferrer">knowledge.moritz-grimm.dev</a></span>
+                                rel="noopener noreferrer" data-umami-event="infrastructure-knowledge-base-click">knowledge.moritz-grimm.dev</a></span>
                     </div>
                     <div class="infrastructure-item">
                         <span class="infrastructure-status" data-service="api.moritz-grimm.dev"></span><span
                             class="infrastructure-name">Personal API</span>
                         <span class="infrastructure-url"><a href="https://api.moritz-grimm.dev" target="_blank"
-                                rel="noopener noreferrer">api.moritz-grimm.dev</a></span>
+                                rel="noopener noreferrer" data-umami-event="infrastructure-api-click">api.moritz-grimm.dev</a></span>
                     </div>
                 </div>
             </section>
@@ -203,9 +202,9 @@
                 <div class="project-grid">
                     <div class="project-card">
                         <a href="https://github.com/moritz-grimm/moritz-grimm.dev" target="_blank"
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer" data-umami-event="projects-homepage-click">
                             <div class="project-id">PROJECT // 001</div>
-                            <div class="project-name">Portfolio</div>
+                            <div class="project-name">Homepage</div>
                             <div class="project-desc">
                                 Personal website with industrial tech aesthetic.
                             </div>
@@ -218,24 +217,9 @@
                         </a>
                     </div>
                     <div class="project-card">
-                        <a href="https://github.com/moritz-grimm/ethernet-wifi-switcher" target="_blank"
-                            rel="noopener noreferrer">
-                            <div class="project-id">PROJECT // 002</div>
-                            <div class="project-name">Ethernet-Wifi-Switcher</div>
-                            <div class="project-desc">
-                                A simple tool to switch between a wired or a wifi connection built with PowerShell for
-                                Windows.
-                            </div>
-                            <div class="project-tags">
-                                <span class="tag">Powershell</span>
-                                <span class="tag">Windows</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project-card">
                         <a href="https://github.com/moritz-grimm/knowledge-base" target="_blank"
-                            rel="noopener noreferrer">
-                            <div class="project-id">PROJECT // 003</div>
+                            rel="noopener noreferrer" data-umami-event="projects-knowledge-base-click">
+                            <div class="project-id">PROJECT // 002</div>
                             <div class="project-name">Knowledge Base</div>
                             <div class="project-desc">
                                 A collection of my notes, code snippets, and insights from my career as a developer.
@@ -248,8 +232,8 @@
                         </a>
                     </div>
                     <div class="project-card">
-                        <a href="https://github.com/moritz-grimm/steam-vault" target="_blank" rel="noopener noreferrer">
-                            <div class="project-id">PROJECT // 004</div>
+                        <a href="https://github.com/moritz-grimm/steam-vault" target="_blank" rel="noopener noreferrer" data-umami-event="projects-steamvault-click">
+                            <div class="project-id">PROJECT // 003</div>
                             <div class="project-name">SteamVault</div>
                             <div class="project-desc">
                                 A tool to backup your steam screenshots to an external cloud storage like OneDrive.
@@ -263,8 +247,8 @@
                     </div>
                     <div class="project-card">
                         <a href="https://github.com/moritz-grimm/personal-api" target="_blank"
-                            rel="noopener noreferrer">
-                            <div class="project-id">PROJECT // 005</div>
+                            rel="noopener noreferrer" data-umami-event="projects-personal-api-click">
+                            <div class="project-id">PROJECT // 004</div>
                             <div class="project-name">Personal API</div>
                             <div class="project-desc">
                                 A simple API that serves personal information through various endpoints.
@@ -276,7 +260,7 @@
                         </a>
                     </div>
                     <div class="project-card">
-                        <div class="project-id">PROJECT // 006</div>
+                        <div class="project-id">PROJECT // 005</div>
                         <div class="project-name">Coming Soon</div>
                         <div class="project-desc">
                             Next project in planning.
@@ -302,11 +286,11 @@
 
                 <div class="link-list">
                     <a href="https://github.com/moritz-grimm" target="_blank" rel="noopener noreferrer"
-                        class="link-item">
+                        class="link-item" data-umami-event="contact-github-click">
                         <span class="link-name">GitHub</span>
                         <span class="link-bracket">[ &lt;/&gt; ]</span>
                     </a>
-                    <a href="mailto:m.grimm.dev@icloud.com" class="link-item">
+                    <a href="mailto:m.grimm.dev@icloud.com" class="link-item" data-umami-event="contact-email-click">
                         <span class="link-name">Email</span>
                         <span class="link-bracket">[ @ ]</span>
                     </a>
