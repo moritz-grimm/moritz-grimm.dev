@@ -22,6 +22,33 @@
     line-height: 1.6;
 }
 
+.meta-block .value {
+    /* muss der line-height von .meta-block entsprechen */
+    --roll-step: 1.6em;
+    height: var(--roll-step);
+    overflow: hidden;
+}
+
+.value-roller {
+    display: flex;
+    flex-direction: column;
+    animation: drum 10s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+.value-roller-item {
+    flex: 0 0 var(--roll-step);
+    height: var(--roll-step);
+}
+
+@keyframes drum {
+    0%,  16% { transform: translateY(0);                           } /* Building */
+    20%, 36% { transform: translateY(calc(var(--roll-step) * -1)); } /* Shipping */
+    40%, 56% { transform: translateY(calc(var(--roll-step) * -2)); } /* Debugging */
+    60%, 76% { transform: translateY(calc(var(--roll-step) * -3)); } /* Learning */
+    80%, 96% { transform: translateY(calc(var(--roll-step) * -4)); } /* Improving */
+    100%     { transform: translateY(calc(var(--roll-step) * -5)); } /* Building */
+}
+
 .label {
     color: var(--lime);
     display: block;
