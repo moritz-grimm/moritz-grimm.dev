@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+    Source for public/og-image.png (1200x630).
+
+    To re-render:
+      1. npm run dev
+      2. open /tools/og-image/card.html on the port Vite prints
+      3. set the viewport to exactly 1200x630 and save the screenshot as public/og-image.png
+
+    Deliberately kept outside public/ and not registered as a build entry point, so it never ends up in the shipped dist/.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>og:image card</title>
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400 900;
+            src: url('/fonts/inter-latin.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 400;
+            src: url('/fonts/space-mono-400-latin.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            src: url('/fonts/space-mono-700-latin.woff2') format('woff2');
+        }
+
+        :root {
+            --lime: #c8ff00;
+            --black: #0a0a0a;
+            --text: #e8e8e8;
+            --text-dim: #777777;
+            --border: rgba(200, 255, 0, 0.12);
+            --mono: 'Space Mono', monospace;
+            --sans: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 1200px;
+            height: 630px;
+        }
+
+        body {
+            background: var(--black);
+            color: var(--text);
+            font-family: var(--mono);
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .hazard {
+            height: 20px;
+            flex-shrink: 0;
+            background: repeating-linear-gradient(-45deg,
+                    var(--lime),
+                    var(--lime) 10px,
+                    var(--black) 10px,
+                    var(--black) 20px);
+        }
+
+        .body {
+            flex: 1;
+            padding: 56px 72px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .eyebrow {
+            font-size: 19px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            color: var(--lime);
+            text-transform: uppercase;
+        }
+
+        .name {
+            font-family: var(--sans);
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 108px;
+            line-height: 1.0;
+            letter-spacing: -0.035em;
+            margin-top: 34px;
+        }
+
+        .name .lime {
+            color: var(--lime);
+        }
+
+        .sub {
+            margin-top: 30px;
+            font-size: 21px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--text-dim);
+        }
+
+        .meta {
+            margin-top: auto;
+            padding-top: 26px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 64px;
+        }
+
+        .meta-block {
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1.7;
+        }
+
+        .meta-block .label {
+            display: block;
+            color: var(--lime);
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 3px;
+        }
+
+        .meta-block .value {
+            color: var(--text-dim);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hazard"></div>
+    <div class="body">
+        <div class="eyebrow">moritz-grimm.dev</div>
+        <div class="name">Moritz Grimm<br><span class="lime">Developer</span></div>
+        <div class="sub">Life is always a work in progress</div>
+        <div class="meta">
+            <div class="meta-block"><span class="label">Status</span><span class="value">Building</span></div>
+            <div class="meta-block"><span class="label">Location</span><span class="value">Germany</span></div>
+            <div class="meta-block"><span class="label">Stack</span><span class="value">TypeScript · HTML/CSS · Node ·
+                    Vite</span></div>
+        </div>
+    </div>
+    <div class="hazard"></div>
+</body>
+
+</html>
