@@ -23,7 +23,7 @@
 }
 
 .meta-block .value {
-    /* muss der line-height von .meta-block entsprechen */
+    /* must match the line-height of .meta-block */
     --roll-step: 1.6em;
     height: var(--roll-step);
     overflow: hidden;
