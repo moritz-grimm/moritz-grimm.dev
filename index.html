@@ -61,7 +61,7 @@
 <body>
     <main>
         <!-- NAV -->
-        <nav>
+        <nav aria-label="Main">
             <div class="container">
                 <div class="nav-inner">
                     <div class="nav-logo">
@@ -324,7 +324,17 @@
         <div class="hazard-stripe thin"></div>
 
         <footer>
-            <p id="footer-text"></p>
+            <p class="footer-meta">
+                <span>Copyright © 2025 - <span id="footer-year">2026</span></span>
+                <span>moritz-grimm.dev</span>
+                <span class="built-by">Built by Moritz</span>
+            </p>
+            <nav class="footer-links" aria-label="Legal">
+                <a href="/impressum.html">Impressum</a>
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <a href="https://status.moritz-grimm.dev/status/default" target="_blank" rel="noopener noreferrer"
+                    data-umami-event="footer-status-click">Status</a>
+            </nav>
         </footer>
 
         <script type="module" src="src/app.ts"></script>
