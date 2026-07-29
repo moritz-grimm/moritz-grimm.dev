@@ -7,7 +7,7 @@ if (footerYear) {
 // Version
 const versionEl = document.querySelectorAll(".app-version");
 versionEl.forEach(element => {
-    element.textContent = `v${__APP_VERSION__ ?? "v1.0.0"}`;
+    element.textContent = `v${__APP_VERSION__ ?? "1.0.0"}`;
 });
 
 // Last Updated
