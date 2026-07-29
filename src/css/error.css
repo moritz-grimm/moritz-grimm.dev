@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.error-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    gap: 10px;
+    --code-size: clamp(4rem, 18vw, 130px);
+}
+
+.error-code-eyebrow {
+    color: var(--text-dim);
+    font-size: 14px;
+}
+
+.error-code {
+    color: var(--lime);
+    font-size: var(--code-size);
+    line-height: 1;
+}
+
+.error-code-separator {
+    width: calc(var(--code-size) * 0.9);
+    height: 3px;
+    background-color: var(--lime);
+    margin-bottom: 1.25rem;
+}
+
+.error-code-subtext {
+    margin-bottom: 17px;
+    color: var(--text);
+    font-size: 15px;
+}
+
+.error-code-cta {
+    display: inline-flex;
+}
