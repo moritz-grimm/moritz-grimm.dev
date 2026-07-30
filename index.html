@@ -41,14 +41,12 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="src/css/fonts.css">
     <link rel="stylesheet" href="src/css/base.css">
-    <link rel="stylesheet" href="src/css/nav.css">
     <link rel="stylesheet" href="src/css/hero.css">
     <link rel="stylesheet" href="src/css/about.css">
     <link rel="stylesheet" href="src/css/stack.css">
     <link rel="stylesheet" href="src/css/projects.css">
     <link rel="stylesheet" href="src/css/contact.css">
     <link rel="stylesheet" href="src/css/status.css">
-    <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/infrastructure.css">
     <link rel="stylesheet" href="src/css/scrollbar.css">
     <script defer src="https://analytics.moritz-grimm.dev/script.js"
@@ -94,26 +92,10 @@
 </head>
 
 <body>
+    <!-- include: nav.html -->
+    <div class="hazard-stripe thin"></div>
+
     <main>
-        <!-- NAV -->
-        <nav aria-label="Main">
-            <div class="container">
-                <div class="nav-inner">
-                    <div class="nav-logo">
-                        <div class="nav-logo-icon">M</div>
-                        <span class="nav-logo-text">MORITZ</span>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="hazard-stripe thin"></div>
-
         <!-- HERO -->
         <div class="container">
             <section class="hero">
@@ -360,25 +342,12 @@
                 <span>Build <span class="app-version">v1.0.0</span></span>
             </div>
         </div>
-
-        <div class="hazard-stripe thin"></div>
-
-        <footer>
-            <p class="footer-meta">
-                <span>Copyright © 2025 - <span id="footer-year">2026</span></span>
-                <span>moritz-grimm.dev</span>
-                <span class="built-by">Built by Moritz</span>
-            </p>
-            <nav class="footer-links" aria-label="Legal">
-                <a href="/impressum.html">Impressum</a>
-                <a href="/privacy-policy.html">Privacy Policy</a>
-                <a href="https://status.moritz-grimm.dev/status/default" target="_blank" rel="noopener noreferrer"
-                    data-umami-event="footer-status-click">Status</a>
-            </nav>
-        </footer>
-
-        <script type="module" src="src/app.ts"></script>
     </main>
+
+    <div class="hazard-stripe thin"></div>
+    <!-- include: footer.html -->
+
+    <script type="module" src="src/app.ts"></script>
 </body>
 
 </html>
