@@ -4,35 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MORITZ // DEV - Datenschutz</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="src/css/fonts.css">
+
+    <title>MORITZ GRIMM // DEV | Datenschutz</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
     <link rel="stylesheet" href="src/css/base.css">
-    <link rel="stylesheet" href="src/css/nav.css">
-    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
     <link rel="stylesheet" href="src/css/scrollbar.css">
     <link rel="stylesheet" href="src/css/legal.css">
 </head>
 
 <body>
+    <!-- include: nav.html -->
+    <div class="hazard-stripe thin"></div>
+
     <main>
-        <nav>
-            <div class="container">
-                <div class="nav-inner">
-                    <a href="/" class="nav-logo">
-                        <div class="nav-logo-icon">M</div>
-                        <span class="nav-logo-text">MORITZ</span>
-                    </a>
-                    <ul class="nav-links">
-                        <li><a href="/">Home</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="hazard-stripe thin"></div>
-
         <div class="container">
             <div class="legal-content">
                 <h1>Datenschutz&shy;erkl&auml;rung</h1>
@@ -299,12 +287,7 @@
         </div>
 
         <div class="hazard-stripe thin"></div>
-
-        <footer>
-            <p id="footer-text"></p>
-        </footer>
-
-        <script type="module" src="src/legal.ts"></script>
+        <!-- include: footer.html -->
     </main>
 </body>
 
