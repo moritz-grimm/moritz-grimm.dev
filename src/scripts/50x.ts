@@ -1,12 +1,12 @@
 const statusMessages = new Map([
-    [500, "Internal Server Error"],
-    [502, "Bad Gateway"],
-    [503, "Service Unavailable"],
-    [504, "Gateway Timeout"],
+    ["500", "Internal Server Error"],
+    ["502", "Bad Gateway"],
+    ["503", "Service Unavailable"],
+    ["504", "Gateway Timeout"],
 ]);
 
-const statusCode = Number(new URLSearchParams(window.location.search).get("code"));
-const code = statusMessages.has(statusCode) ? String(statusCode) : "50x";
+const statusCode = document.querySelector<HTMLMetaElement>("meta[name='error-code']")?.content ?? "";
+const code = statusMessages.has(statusCode) ? statusCode : "50x";
 const message = statusMessages.get(statusCode) ?? "Something went wrong";
 
 document.querySelectorAll<HTMLElement>("[data-error-code]").forEach(element => {
