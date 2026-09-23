@@ -62,6 +62,7 @@ export default defineConfig({
                 impressum: resolve(__dirname, "impressum.html"),
                 privacyPolicy: resolve(__dirname, "privacy-policy.html"),
                 404: resolve(__dirname, "404.html"),
+                "50x": resolve(__dirname, "50x.html"),
             },
         },
     },
