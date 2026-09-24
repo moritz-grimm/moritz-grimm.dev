@@ -53,7 +53,7 @@ function sitemap(): Plugin {
 export default defineConfig({
     plugins: [partials(), sitemap()],
     define: {
-        __APP_VERSION__: JSON.stringify(pkg.version),
+        __APP_VERSION__: JSON.stringify(pkg.version ?? "1.0.0"),
     },
     build: {
         rollupOptions: {
