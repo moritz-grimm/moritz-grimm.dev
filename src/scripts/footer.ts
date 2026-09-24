@@ -16,6 +16,7 @@ if (lastUpdatedEl) {
     let date;
     try {
         const res = await fetch("https://api.moritz-grimm.dev/last-updated/moritz-grimm.dev");
+        if (!res.ok) throw new Error(res.statusText);
         date = await res.json() as { lastUpdated?: string };
     } catch (err) {
         console.error("Error fetching from api.moritz-grimm.dev", err);

@@ -10,9 +10,9 @@ const statusElements = document.querySelectorAll(".infrastructure-status");
 async function updateStatus(): Promise<void> {
     let services: Service[];
     try {
-        const response = await fetch("https://api.moritz-grimm.dev/status");
-        if (!response.ok) throw new Error(response.statusText);
-        services = await response.json() as Service[];
+        const res = await fetch("https://api.moritz-grimm.dev/status");
+        if (!res.ok) throw new Error(res.statusText);
+        services = await res.json() as Service[];
     } catch (err) {
         console.error("Error fetching from api.moritz-grimm.dev", err);
         return;
